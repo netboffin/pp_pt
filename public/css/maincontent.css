@@ -1,0 +1,19 @@
+/* CSS Document */
+#maincontent{background:white;margin:20px;margin-bottom:80px;min-height:500px;}
+#maincontent h1{padding: 30px 0 10px 30px;font-size:24px;font-weight:normal;color:#217A00;}
+
+#maincontent h2{padding-left:30px;font-size:20px;font-weight:normal;color:#222;}
+
+#leftside{width:60%;float:left;background:blue;}
+#rightside{width:20%;float:right;}
+#footer{
+	background-color: #333;
+	text-align:left;
+	color:red;
+	margin-top: -80px; /* negative value of footer height */
+	height: 70px;
+	bottom:0;
+	width:100%;
+	}
+#footer, .push{clear:both;}
+#project_list{margin-bottom:10px;}

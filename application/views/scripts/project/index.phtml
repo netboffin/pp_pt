@@ -1,0 +1,129 @@
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('#StartUpTasks,#InitiatingAProjectTasks').hide();
+         });
+    </script>
+	<style>
+	#PrinceStructure{width:600px;}
+	#ManageProjectStages{width:350px;}
+	#PrinceProcesses{width:600px;}
+	#Library{width:350px;}
+	#OtherStuff{width:350px;}
+	button{float:right;width:300px;}
+        #rightside{width:35%}
+        #leftside{width:60%;padding-left:10px;}
+	</style>
+    <h1>Project 1</h1>
+    <div id="leftside">
+        <form id="PrinceStructure">
+            <fieldset><legend>Prince Structure</legend><img src="<?=$this->baseUrl()?>/images/PrinceStructure.gif" width="500">
+            </fieldset>
+        </form>
+	
+	<form id="PrinceProcesses">
+        <fieldset>
+        <legend>Prince Processes</legend>
+        <div id="StartUp"><h2>Starting Up A Project<button onclick="$('#StartUpTasks').toggle();return false;">View Starting Up a Project Tasks</button></h2>
+            <ul id="StartUpTasks">
+                <li id="AppointPMandExec">Appoint PM and Exec</li>
+                <li id="OutlineBusinessCase">Outline Business Case</li>
+                <li id="CaptureLessonsLearned">Capture Lessons Learned</li>
+                <li id="AppointProjectTeam">Appoint Project Team</li>
+                <li id="SelectApproachandPrepBrief">Select Approach and Prep Brief</li>
+                <li id="PlanInitiationStage">Plan Initiation Stage</li>
+            </ul>
+        </div>
+        <div id="DirectingAProject"><h2>Directing a Project</h2>
+			<div id="DirectingAProjectTasks">
+			</div>
+		</div>
+		
+        <div id="InitiatingAProject"><h2>Initiation A Project<button onclick="$('#InitiatingAProjectTasks').toggle();return false;">View Initiating a Project Tasks</button></h2></div>
+			<ul id="InitiatingAProjectTasks">
+				<li id="PrepareRiskMgtStrategy">Prepare Risk Management Strategy</li>
+                <li id="PrepareQualityMgtStrategy">Prepare Quality Management Strategy</li>
+                <li id="PrepareConfigurationMgtStrategy">Prepare Configuration Management Strategy</li>
+                <li id="PrepareCommunicationMgtStrategy">Appoint Project Team</li>
+                <li id="SeuUpProjectControls">SetUpProjectControls</li>
+                <li id="PlanInitiationStage">Plan Initiation Stage</li>			
+			</ul>
+        <div id="ManagingStageBoundary"><h2>Managing a Stage Boundary</h2></div>
+        <div id="ControllingStage"><h2>Controlling A Stage</h2></div>
+        <div id="ManagingProductDelivery"><h2>Managing Product Delivery</h2></div>
+        <div id="ClosingaProject"><h2>Closing A Project</h2></div>
+        </fieldset>
+    </form>
+	</div><!-- End of leftside -->
+	<div id="rightside">
+	<form id="ManageProjectStages">
+		<fieldset>
+		<legend>Manage Project Stages</legend>
+		<ul>
+		<li>Add a stage to the project</li>
+		<li>Delete a stage from the project</li>
+		<li>Edit a project stage</li>
+		</ul>
+		<ul>
+		<ul id="ListOfStages">
+		<li>Analysis</li>
+		<li>Design</li>
+		<li>Implementation</li>
+		<li>Testing</li>
+		<li>Maintenance</li>
+		</ul>
+		</fieldset>
+	</form>
+	<form id="Library">
+	<fieldset>
+	<legend>Library</legend>
+	<ul id="LibraryElements">
+		<li>Roles</li>
+		<li>Checklists</li>
+		<li>Baselines</li>
+		<li>Records</li>
+		<li>Reports</li>
+	</ul>
+	</fieldset>
+	</form>
+	<form id="OtherStuff">
+	<fieldset>
+	<legend>OtherStuff</legend>
+	
+	<ul id="otherStuff">
+		<li>Recent Activity</li>
+		<li>Quickview Monitor Time Money Quality</li>
+		<li>Quick view Monitor Resources</li>
+		<li>Inputs to project</li>
+		<li>Outputs/Deliverables/Products</li>
+		<li>
+                    <dl>
+                        <dt>Resources</dt>
+                        <dd>People, equipment, material</dd>
+                    </dl>
+                <li>
+                    <dl>
+                        <dt>Time</dt>
+                        <dd>Task durations, dependencies, critical path</dd>
+                    </dl>
+                </li>
+    <li>
+        <dl>
+            <dt>Money</dt>
+            <dd>Costs, contingencies,profit</dd>
+        </dl>
+    </li>
+    <li><dl>
+            <dt>Scope</dt>
+            <dd>Project size, goals, requirements</dd>
+        </dl>
+    </li>
+
+		
+	</ul>
+	</fieldset>
+	</form>
+	</div><!-- End of rightside -->
+	<div style="clear:both;"></div>
+    
+	
+	
